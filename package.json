@@ -1,7 +1,7 @@
 {
   "name": "lazy-child",
   "description": "React component that renders its child when it enters the viewport",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "license": "MIT",
   "author": "Wyatt Johnston <w@wyatt.page>",
   "repository": {
