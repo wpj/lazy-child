@@ -50,6 +50,26 @@ in view elements.
 
 Default: `0`
 
+##### `offsetLeft?: number`
+
+Passed to the wrapped [react-peekaboo](https://github.com/wpj/react-peekaboo)
+instance.
+
+Number of pixels to add to the left of the area checked against when computing
+in view elements.
+
+Default: `0`
+
+##### `offsetRight?: number`
+
+Passed to the wrapped [react-peekaboo](https://github.com/wpj/react-peekaboo)
+instance.
+
+Number of pixels to add to the right of the area checked against when computing
+in view elements.
+
+Default: `0`
+
 ##### `offsetTop?: number`
 
 Passed to the wrapped [react-peekaboo](https://github.com/wpj/react-peekaboo)

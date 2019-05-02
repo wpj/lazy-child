@@ -70,7 +70,7 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.0.0",
-    "react-peekaboo": "^0.2.1"
+    "react-peekaboo": "^0.3.0"
   },
   "peerDependencies": {
     "react": ">=16"

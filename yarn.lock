@@ -4053,10 +4053,10 @@ react-is@^16.8.1, react-is@^16.8.4:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.8.6.tgz#5bbc1e2d29141c9fbdfed456343fe2bc430a6a16"
   integrity sha512-aUk3bHfZ2bRSVFFbbeVS4i+lNPZr3/WM5jT2J5omUVV1zzcs1nAaf3l51ctA5FFvCRbhrH0bdAsRRQddFJZPtA==
 
-react-peekaboo@^0.2.1:
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/react-peekaboo/-/react-peekaboo-0.2.1.tgz#f9c2a18f85c0bc27f2d55f0fc9cbe057ed78300d"
-  integrity sha512-dvXTe4viQ5xyycKZxHW3PKVSCRHMPyKhUqwnLxPsc484mXZsYPYaEjYBpBzlTlU8kViWdz4edNG3uQ0VAlflxQ==
+react-peekaboo@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/react-peekaboo/-/react-peekaboo-0.3.0.tgz#546f175e74d44c71604e0a0358ddc49dcdae189e"
+  integrity sha512-Vae3BZ6aBCqAD4F7nWwX0Q8GWHb15p8hgfLiKtp3XF8/iyWhx+9na4Kz15lvoOR12+V7sdYv3BCNv3rG5gK2uA==
   dependencies:
     "@babel/runtime" "^7.0.0"
     lodash.throttle "^4.1.1"
