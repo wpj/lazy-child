@@ -1,4 +1,4 @@
-import React, { useState, ReactNode, Ref } from 'react';
+import React, { useState, Fragment, ReactNode, Ref } from 'react';
 import {
   useIntersectionChange,
   Options as PeekabooOptions,
@@ -26,5 +26,7 @@ export default function Lazy<E extends HTMLElement>({
     ...peekabooOptions,
   });
 
-  return <>{isIntersecting ? children : renderPlaceholder(ref)}</>;
+  return (
+    <Fragment>{isIntersecting ? children : renderPlaceholder(ref)}</Fragment>
+  );
 }
