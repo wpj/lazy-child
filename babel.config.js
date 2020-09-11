@@ -1,4 +1,4 @@
-module.exports = (env => {
+module.exports = ((env) => {
   const isTest = env.NODE_ENV === 'test' || 'CI' in env;
 
   const plugins = ['@babel/plugin-proposal-class-properties'];

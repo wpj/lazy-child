@@ -1,14 +1,14 @@
 {
   "compilerOptions": {
     "allowSyntheticDefaultImports": true,
-    "declaration": true,
-    "declarationDir": "dist",
     "emitDecoratorMetadata": false,
     "esModuleInterop": true,
     "experimentalDecorators": false,
-    "importHelpers": true,
-    "jsx": "react",
-    "lib": ["es2015", "dom"],
+    "jsx": "preserve",
+    "lib": [
+      "es2015",
+      "dom"
+    ],
     "module": "esnext",
     "moduleResolution": "node",
     "noFallthroughCasesInSwitch": true,
@@ -19,13 +19,15 @@
     "noUnusedParameters": true,
     "pretty": true,
     "removeComments": true,
-    "outDir": "compiled",
-    "sourceMap": true,
     "strict": true,
     "strictNullChecks": true,
     "stripInternal": true,
-    "target": "esnext"
-  },
-  "include": ["src", "types"],
-  "exclude": ["node_modules", "dist"]
+    "target": "esnext",
+    "allowJs": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true
+  }
 }

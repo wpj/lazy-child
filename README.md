@@ -1,29 +1,25 @@
-# `lazy-child`
+# lazy-child
 
-[![Build Status](https://cloud.drone.io/api/badges/wpj/lazy-child/status.svg)](https://cloud.drone.io/wpj/lazy-child)
+[![CI Status](https://github.com/wpj/lazy-child/workflows/CI/badge.svg)](https://github.com/wpj/lazy-child/actions)
 
 React component that renders its child when it enters the viewport.
 
 ## Installation
 
 ```
-yarn add lazy-child
-```
-
-Or
-
-```
-npm install --save lazy-child
+npm install lazy-child
 ```
 
 ## Usage
 
-```jsx
+```tsx
 import Lazy from 'lazy-child';
 
 function LazyLoadedImageExample() {
   return (
-    <Lazy renderPlaceholder={ref => <img ref={ref} alt="Lazy loaded image" />}>
+    <Lazy<HTMLImageElement>
+      renderPlaceholder={(ref) => <img ref={ref} alt="Lazy loaded image" />}
+    >
       <img src="example.jpg" alt="Lazy loaded image" />
     </Lazy>
   );
@@ -80,11 +76,10 @@ view elements.
 
 Default: `0`
 
-##### `renderPlaceholder: (ref: React.Ref<any>) => React.ReactNode`
+##### `renderPlaceholder<E extends HTMLElement>: (ref: React.Ref<E>) => React.ReactNode`
 
-Render prop that returns a React element to render as a placeholder. The
-function receives a ref as its first parameter that must be applied to a DOM
-element.
+Render prop that returns a React element to use as a placeholder. The function
+receives a ref as its first parameter that must be applied to a DOM element.
 
 ##### `throttle?: number`
 
